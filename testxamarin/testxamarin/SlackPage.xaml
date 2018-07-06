@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testxamarin.SlackPage">
+
+    <!--<StackLayout BackgroundColor="Yellow"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Spacing="10"
+                 Padding="10"
+                 Orientation="Horizontal">
+        <StackLayout>
+            <Image Source="http://placehold.it/100x100" />
+            <Label Text="label 1" BackgroundColor="SaddleBrown"></Label>
+        </StackLayout>
+        
+        <Label Text="label 2" BackgroundColor="SaddleBrown"></Label>
+        <Label Text="label 3" BackgroundColor="SaddleBrown"></Label>
+    </StackLayout>-->
+    
+</ContentPage>

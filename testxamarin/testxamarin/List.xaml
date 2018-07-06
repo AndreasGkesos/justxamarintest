@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testxamarin.List">
+
+    <RelativeLayout>
+        <StackLayout
+            x:Name="infoLayout"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Width,
+                Factor=1}"
+
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=0.3}">
+            <Label x:Name="EmployeeId" />
+            <Label x:Name="EmployeeName" />
+            <Label x:Name="EmployeeSalary" />
+            <Label x:Name="EmployeeAge" />
+            <Label x:Name="EmployeeImage" />
+        </StackLayout>
+        <StackLayout
+            x:Name="EmployeeList"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=1}"
+
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                Property=Height,
+                Factor=0.7}"
+
+            RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                ElementName=infoLayout,
+                Constant=0,
+                Property=Height,
+                Factor=1}">
+            <!--<ActivityIndicator
+                IsRunning="{Binding Source={x:Reference list}, Path=IsLoading}"
+                Color="Black"
+            
+                RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Factor=0.5,
+                Property=Height}"
+            
+                RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Factor=0.5,
+                Property=Width}"
+            
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=0.4}"
+            
+                RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Width,
+                Factor=0.4}"/>-->
+
+            <!--<ActivityIndicator
+                IsRunning="{Binding Busy}"
+                IsVisible="{Binding Busy}"
+                Color="Black"
+            
+                HeightRequest="40"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>-->
+            <ListView 
+                x:Name="list"
+                ItemTapped="list_ItemTapped"
+                RowHeight="30"
+                IsVisible="{Binding IsLoading}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell Text="{Binding employee_name}"/>-->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding id, StringFormat='ID: {0}'}" Margin="10, 0, 0, 0"/>
+                                <Label Text="{Binding employee_name, StringFormat='| Name: {0}'}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>

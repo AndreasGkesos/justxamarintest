@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:testxamarin.CustomRenderers"
              x:Class="testxamarin.Login">
 
     <AbsoluteLayout
-        >
+        BackgroundColor="Aqua">
 
         <Image
             x:Name="logo"
@@ -12,23 +13,31 @@
             AbsoluteLayout.LayoutFlags="PositionProportional"
             Source="https://dummyimage.com/100x100/473447/fff"/>
 
-        <Entry
+        <!--<Entry
             x:Name="username"
             AbsoluteLayout.LayoutBounds="0.5, 0.4, 100, 20"
             AbsoluteLayout.LayoutFlags="PositionProportional"
             TextColor="Black"
-            Placeholder="Username"/>
+            Placeholder="Username"/>-->
+
+        <local:CustomEntry 
+            x:Name="username"
+            AbsoluteLayout.LayoutBounds="0.5, 0.4, 200, 50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Placeholder="Username"
+            TextColor="Black"
+            Focused="username_Focused"/>
 
         <Entry
             x:Name="password"
-            AbsoluteLayout.LayoutBounds="0.5, 0.6, 100, 20"
+            AbsoluteLayout.LayoutBounds="0.5, 0.6, 200, 50"
             AbsoluteLayout.LayoutFlags="PositionProportional"
             TextColor="Black"
             Placeholder="Password"/>
 
         <Button 
             x:Name="loginBtn"
-            AbsoluteLayout.LayoutBounds="0.5, 1, 100, 40"
+            AbsoluteLayout.LayoutBounds="0.5, 1, 200, 40"
             AbsoluteLayout.LayoutFlags="PositionProportional"
             Text="Login"/>
     </AbsoluteLayout>

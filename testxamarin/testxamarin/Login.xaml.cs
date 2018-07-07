@@ -16,8 +16,13 @@ namespace testxamarin
 		{
 			InitializeComponent ();
 
-            username.TextColor = Color.Black;
+            // username.TextColor = Color.Black;
 
         }
-	}
+
+        private void username_Focused(object sender, FocusEventArgs e)
+        {
+            ((CustomRenderers.CustomEntry)sender).TextColor = Color.Black;
+        }
+    }
 }

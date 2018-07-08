@@ -32,14 +32,27 @@ namespace testxamarin
         {
             base.OnAppearing();
 
-            list.IsEnabled = false;
-            var employees = await Network.GetAsync<List<Employee>>("getEmployees");
+            activityIndicator.IsRunning = true;
+            activityIndicator.IsVisible = true;
+            
 
-            if (employees != null)
+            try
             {
-                list.ItemsSource = employees;
-                list.IsEnabled = true;
+                var employees = await Network.GetAsync<List<Employee>>("getEmployees");
+                if (employees != null)
+                {
+                    list.ItemsSource = employees;
 
+                }
+            }
+            catch(Exception e)
+            {
+
+            }
+            finally
+            {
+                activityIndicator.IsRunning = false;
+                activityIndicator.IsVisible = false;
             }
         }
 

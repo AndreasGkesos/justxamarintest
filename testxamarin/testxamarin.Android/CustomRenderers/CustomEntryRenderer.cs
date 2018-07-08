@@ -2,13 +2,14 @@
 using Xamarin.Forms;
 using Android.Content;
 using testxamarin.CustomRenderers;
+using testxamarin.Droid.CustomRenderers;
 
-[assembly: ExportRenderer(typeof(CustomEntry), typeof(testxamarin.Droid.CustomRenderers.CustomEntry))]
+[assembly: ExportRenderer(typeof(CustomEntry), typeof(CustomEntryRenderer))]
 namespace testxamarin.Droid.CustomRenderers
 {
-    class CustomEntry : EntryRenderer
+    class CustomEntryRenderer : EntryRenderer
     {
-        public CustomEntry(Context context) : base(context)
+        public CustomEntryRenderer(Context context) : base(context)
         {
         }
 

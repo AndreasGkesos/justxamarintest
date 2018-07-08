@@ -40,29 +40,24 @@
                 Constant=0,
                 Property=Height,
                 Factor=1}">
-            <!--<ActivityIndicator
-                IsRunning="{Binding Source={x:Reference list}, Path=IsLoading}"
-                Color="Black"
-            
+            <ActivityIndicator x:Name="activityIndicator" 
+                Color="Black"            
                 RelativeLayout.YConstraint="{ConstraintExpression
                 Type=RelativeToParent,
                 Factor=0.5,
-                Property=Height}"
-            
+                Property=Height}"            
                 RelativeLayout.XConstraint="{ConstraintExpression
                 Type=RelativeToParent,
                 Factor=0.5,
-                Property=Width}"
-            
+                Property=Width}"            
                 RelativeLayout.HeightConstraint="{ConstraintExpression
                 Type=RelativeToParent,
                 Property=Height,
-                Factor=0.4}"
-            
+                Factor=0.4}"            
                 RelativeLayout.WidthConstraint="{ConstraintExpression
                 Type=RelativeToParent,
                 Property=Width,
-                Factor=0.4}"/>-->
+                Factor=0.4}"/>
 
             <!--<ActivityIndicator
                 IsRunning="{Binding Busy}"

@@ -4,8 +4,10 @@
              xmlns:local="clr-namespace:testxamarin.CustomRenderers"
              x:Class="testxamarin.Login">
 
-    <AbsoluteLayout
-        BackgroundColor="Aqua">
+    <!--testxamarin.Login     testxamarin.CustomRenderers.CustomPage-->
+    
+    <local:GradientColorStack StartColor="Orange"
+                              EndColor="Red">
 
         <Image
             x:Name="logo"
@@ -25,8 +27,7 @@
             AbsoluteLayout.LayoutBounds="0.5, 0.4, 200, 50"
             AbsoluteLayout.LayoutFlags="PositionProportional"
             Placeholder="Username"
-            TextColor="Black"
-            Focused="username_Focused"/>
+            TextColor="Black"/>
 
         <Entry
             x:Name="password"
@@ -40,5 +41,5 @@
             AbsoluteLayout.LayoutBounds="0.5, 1, 200, 40"
             AbsoluteLayout.LayoutFlags="PositionProportional"
             Text="Login"/>
-    </AbsoluteLayout>
+    </local:GradientColorStack>
 </ContentPage>

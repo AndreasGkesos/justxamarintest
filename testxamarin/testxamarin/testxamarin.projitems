@@ -21,6 +21,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CustomRenderers\CustomEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomRenderers\CustomPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomRenderers\GradientColorStack.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
       <SubType>Code</SubType>

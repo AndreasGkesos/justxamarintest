@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace testxamarin.Helpers
+namespace testxamarin.Models
 {
     class LoginBindingModel
     {

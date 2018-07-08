@@ -24,8 +24,6 @@ namespace testxamarin
             EmployeeSalary.Text = "Test";
             EmployeeAge.Text = "Test";
             EmployeeImage.Text = "Test";
-
-            Network.LoginAsync("login", new LoginBindingModel { Username = "asdf", Password = "1234" });
         }
 
         protected override async void OnAppearing()

@@ -27,7 +27,7 @@
       <DependentUpon>GridPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\AccountModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AccountModels.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Network.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ImagePage.xaml.cs">

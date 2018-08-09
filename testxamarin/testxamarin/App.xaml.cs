@@ -11,8 +11,9 @@ namespace testxamarin
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new Login());
-		}
+            //MainPage = new NavigationPage(new NewLogin());
+            MainPage = new NewLogin();
+        }
 
 		protected override void OnStart ()
 		{

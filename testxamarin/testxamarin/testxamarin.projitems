@@ -48,6 +48,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)MarkupExtentions\EmbeddedImage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Employee.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\People.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NewLogin.xaml.cs">
+      <DependentUpon>NewLogin.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)RelativePage.xaml.cs">
       <DependentUpon>RelativePage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -98,6 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)NewLogin.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

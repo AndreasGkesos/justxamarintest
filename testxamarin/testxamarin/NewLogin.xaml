@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
              x:Class="testxamarin.NewLogin"
-             BackgroundImage="main_background.jpg">
+             BackgroundImage="main_background.jpg"
+             NavigationPage.HasNavigationBar="False">
     <!--<Frame BackgroundColor="Transparent" >
         <StackLayout x:Name="background" BackgroundColor="Transparent" >
             <Label>sdsds</Label>
@@ -42,7 +43,7 @@
         <StackLayout Margin="20">
             <Frame CornerRadius="5" BackgroundColor="Yellow" Padding="0" OutlineColor="Black">
                 <StackLayout HorizontalOptions="Fill">
-                    <Button TextColor="White" BackgroundColor="#4a80cb" Text="LOGIN" HorizontalOptions="FillAndExpand"></Button>
+                    <Button TextColor="White" BackgroundColor="#4a80cb" Text="LOGIN" HorizontalOptions="FillAndExpand" Clicked="Login_Button_Clicked"></Button>
                 </StackLayout>
             </Frame>
         </StackLayout>

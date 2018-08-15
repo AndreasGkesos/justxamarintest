@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="testxamarin.MasterDetail.AddEmployee" Title="Add Employee" BackgroundColor="Cyan">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="40">
+            <Label Text="Add new Employee"></Label>
+            <Label Text="Enter Name : "></Label>
+            <Entry x:Name="name" Placeholder="Name"></Entry>
+            <Label Text="Enter Address : "></Label>
+            <Entry x:Name="address" Placeholder="Address"></Entry>
+            <Label Text="Enter Designation : "></Label>
+            <Entry x:Name="designation" Placeholder="Designation"></Entry>
+            <Button Text="Submit" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>  

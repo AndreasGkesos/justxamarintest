@@ -36,7 +36,7 @@ namespace testxamarin
 
             try
             {
-                var employees = await Network.GetAsync<List<Employee>>("getEmployees");
+                var employees = await Network.GetAsync<List<Employee2>>("getEmployees");
                 if (employees != null)
                 {
                     list.ItemsSource = employees;
@@ -58,11 +58,11 @@ namespace testxamarin
         {
             // DisplayAlert("list", ((Employee) e.Item).id, "cancel");
 
-            EmployeeId.Text = ((Employee) e.Item).id;
-            EmployeeName.Text = ((Employee)e.Item).employee_name;
-            EmployeeSalary.Text = ((Employee)e.Item).employee_salary;
-            EmployeeAge.Text = ((Employee)e.Item).employee_age;
-            EmployeeImage.Text = ((Employee)e.Item).profile_image;
+            EmployeeId.Text = ((Employee2) e.Item).id;
+            EmployeeName.Text = ((Employee2)e.Item).employee_name;
+            EmployeeSalary.Text = ((Employee2)e.Item).employee_salary;
+            EmployeeAge.Text = ((Employee2)e.Item).employee_age;
+            EmployeeImage.Text = ((Employee2)e.Item).profile_image;
         }
     }
 }

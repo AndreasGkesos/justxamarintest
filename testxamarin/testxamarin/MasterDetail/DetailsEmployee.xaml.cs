@@ -3,23 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using testxamarin.MasterDetail;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace testxamarin
+namespace testxamarin.MasterDetail
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class NewLogin : ContentPage
+	public partial class DetailsEmployee : ContentPage
 	{
-		public NewLogin ()
+		public DetailsEmployee ()
 		{
 			InitializeComponent ();
 		}
 
-        private void Login_Button_Clicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MasterDetails());
+
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
